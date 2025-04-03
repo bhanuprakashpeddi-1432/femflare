@@ -78,7 +78,7 @@ p {
         <!-- President Section -->
         <div class="profile">
             <img src="images/k_Satayanarayana.jpg" alt="Dr. Koneru Satyanarayana">
-            <h2>Er. Koneru Satyanarayana</h2>
+            <h2>Er. KONERU SATYANARAYANA</h2>
             <h4>President</h4>
         </div>
 
@@ -118,7 +118,7 @@ Furthermore, researchers will be encouraged to present their work at conferences
         <!-- Honorable Secretary Section -->
         <div class="profile">
             <img src="images/1.jpeg" alt="Smt Koneru Siva Kanchana Latha">
-            <h2>Smt Koneru Siva Kanchana Latha</h2>
+            <h2>Smt KONERU SIVA KANCHANA LATHA</h2>
             <h4>Honorable Secretary</h4>
         </div>
 
