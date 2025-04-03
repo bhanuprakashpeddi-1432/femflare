@@ -73,7 +73,7 @@ p {
     <div class="container">
         <br><br><br><br>
         
-        <h1><b>OURR VISIONARIES</b></h1>
+        <h1><b>OUR VISIONARIES</b></h1>
 
         <!-- President Section -->
         <div class="profile">
@@ -84,13 +84,13 @@ p {
 
         <div class="section">
             <h3>About the President</h3>
-            <p>Er. Koneru Satyanarayana is the President of KL (Koneru Lakshmaiah) Deemed-to-be-University, Vijayawada, Guntur, Andhra Pradesh (established in 1980). Sprawled across a green 100-acre world-class campus, KL Deemed to be University is providing high-quality undergraduate, postgraduate, doctoral, and post-doctoral study and research programmes in architecture, fine arts, engineering, law, management, humanities and sciences, and pharmacy to around 20,000 students mentored by 1,200 faculty members.</p>
+            <p>Er. Koneru Satyanarayana is the President of KL (Koneru Lakshmaiah) Deemed-to-be-University, Vijayawada, Guntur, Andhra Pradesh (established in 1980). Sprawled across a green 100-acre world-class campus, KL Deemed to be University is providing high-quality undergraduate, postgraduate, doctoral, and post-doctoral study and research programmes in architecture, fine arts, engineering, law, management, humanities and sciences, and pharmacy to around 20,000 students mentored by 1,200 faculty members.
 
-            <p>An alumnus of BMS College of Engineering, Bengaluru, Satyanarayana began his career in 1977 as an entrepreneur (Coastal Cables Pvt. Ltd, Andhra Pradesh). However, his true passion lay in the nurturance and development of KL College of Engineering, which was co-promoted by his father, a successful businessman and philanthropist.</p>
+            An alumnus of BMS College of Engineering, Bengaluru, Satyanarayana began his career in 1977 as an entrepreneur (Coastal Cables Pvt. Ltd, Andhra Pradesh). However, his true passion lay in the nurturance and development of KL College of Engineering, which was co-promoted by his father, a successful businessman and philanthropist.
 
-            <p>In 1980, he was appointed as a managing committee member of the family-run Koneru Lakshmaiah Education Foundation (KLEF), which managed the college. At this point, he shifted his prime focus onto educational management.</p>
+           In 1980, he was appointed as a managing committee member of the family-run Koneru Lakshmaiah Education Foundation (KLEF), which managed the college. At this point, he shifted his prime focus onto educational management.
 
-            <p>Twelve years later, he became chairman, and since then, over the past four decades as KLEF bloomed into a full-fledged university, Satyanarayana became increasingly involved in education management and digitalizing resources. He also played a critical role in establishing a student entrepreneurship cell. In 2009, he became the President of KL Deemed-to-be University.</p>
+            Twelve years later, he became chairman, and since then, over the past four decades as KLEF bloomed into a full-fledged university, Satyanarayana became increasingly involved in education management and digitalizing resources. He also played a critical role in establishing a student entrepreneurship cell. In 2009, he became the President of KL Deemed-to-be University.</p>
         </div>
 
         <div class="section">
