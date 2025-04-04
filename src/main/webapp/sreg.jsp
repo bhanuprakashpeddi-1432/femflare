@@ -44,7 +44,7 @@
             color: #555;
         }
 
-        input[type="text"], input[type="email"], input[type="password"] {
+        input[type="text"], input[type="email"], input[type="password"],input[type="number"] {
             width: 100%;
             padding: 8px;
             border: 2px solid #ff80ab;
@@ -55,7 +55,7 @@
             transition: 0.3s;
         }
 
-        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+        input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus,input[type="number"]:focus {
             border-color: #e91e63;
             background: white;
         }
