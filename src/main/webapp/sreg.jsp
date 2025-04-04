@@ -173,7 +173,7 @@
                 </tr>
                 <tr>
                     <td><label for="scontact">Enter Contact Number</label></td>
-                    <td><input type="text" id="scontact" name="scontact" required/></td>
+                    <td><input type="number" id="scontact" name="scontact" required/></td>
                 </tr>
                 <tr>
                     <td colspan="2" class="button-container">
