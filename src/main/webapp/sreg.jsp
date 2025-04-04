@@ -44,7 +44,7 @@
             color: #555;
         }
 
-        input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+        input[type="text"], input[type="email"], input[type="password"], input[type=number] {
             width: 100%;
             padding: 8px;
             border: 2px solid #ff80ab;
