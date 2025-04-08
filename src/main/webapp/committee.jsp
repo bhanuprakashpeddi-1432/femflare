@@ -120,7 +120,7 @@ td:nth-child(3) {
                         {"17", "Paper Presentations", "Dr. D. Bhavana, Assoc. Prof -ECE., Dr. P. Vidyullatha, Assoc. Prof -CSE., Dr. N.V. Siva Kumari, Assoc. Prof CSS., Dr. A.V. Padmavathi, Assoc. Prof, English., Dr. B. Pooja Sudharma, Asst. Prof, Law."},
                         {"18", "Sponsorships and Stalls", "Dr. T. Santhi Sri, Deputy HOD CSE, KLEF., Dr. T. Pavan Kumar, HOD-CSE., Dr. K. Hema Divya, Assoc. Prof, MBA."},
                         {"19", "Workshops", "Dr. Sujatha Moorthy, Deputy HOD & Professor, ECE., Dr. Nilu Singh, Deputy HOD, Assoc. Prof, CSE-H."},
-                        {"20", "Poster Presentations & Art exhibition & Craft exhibition", "Dr. Swarna Kuchibhotla, Assoc. Prof, CSE., Dr. Mothukuri Radha, Assoc. Prof CSE."},
+                        {"20", "Poster Presentations & Art exhibition & Craft exhibition", "Dr. Swarna Kuchibhotla, Assoc. Prof, CSE., Dr. Mothukuri Radha, Assoc. Prof CSE"},
                         {"21", "Fashion Show / Lifestyle / Pro Show", "Dr. K. Sony, Asst. Director- Alumni Relations."},
                         {"22", "Ambulance and First Aid & Space Management", "Dr. E. Sreedevi (BES)."}
                     };
