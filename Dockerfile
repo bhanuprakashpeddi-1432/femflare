@@ -1,27 +1,14 @@
-# ----------- Stage 1: Build the Spring Boot app using Maven -----------
-FROM maven:3.9.5-eclipse-temurin-17 AS builder
+# Use Maven with Java 17
+FROM maven:3.9.6-eclipse-temurin-17
 
-# Create app directory
+# Set working directory inside the container
 WORKDIR /app
 
-# Copy the whole project
+# Copy all project files to the container
 COPY . .
 
-# Build the project and skip tests
-RUN mvn clean package -DskipTests
-
-
-# ----------- Stage 2: Run the built JAR with Java 17 -----------
-FROM eclipse-temurin:17-jdk
-
-# Create app directory in runtime container
-WORKDIR /app
-
-# Copy the JAR from the builder container
-COPY --from=builder /app/target/*.jar app.jar
-
-# Expose the app port (change if your app runs on a different port)
+# Expose the default Spring Boot port
 EXPOSE 8080
 
-# Run the Spring Boot app
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Run the app using Maven (no JAR build)
+CMD ["mvn", "spring-boot:run"]
