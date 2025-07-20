@@ -1,15 +1,15 @@
 <%@ page import="java.util.List" %>
-<%@ page import="com.klef.flemflare.model.FemFlareEvent" %>
+<%@ page import="com.klef.flemflare.model.FlareEvent" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
 <%
-    List<FemFlareEvent> events = (List<FemFlareEvent>) request.getAttribute("events");
+    List<FlareEvent> events = (List<FlareEvent>) request.getAttribute("events");
 %>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <title>FemFlare Events</title>
+    <title>Flare Events</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
     <style>
@@ -82,11 +82,11 @@
     <%@include file="stunavbar.jsp" %>
 
     <div class="container mt-4">
-        <h2 class="text-center mb-4">Upcoming FemFlare Events</h2>
+        <h2 class="text-center mb-4">Upcoming Flare Events</h2>
         
         <% if (events != null && !events.isEmpty()) { 
             for (int i = 0; i < events.size(); i++) { 
-                FemFlareEvent event = events.get(i); 
+                FlareEvent event = events.get(i); 
         %>
                 <div class="event-card" onclick="toggleDetails(<%= i %>)">
                     <div class="event-header">

@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Add FemFlare Event</title>
+    <title>Add Flare Event</title>
     <style>
         body {
             font-family: "Poppins", sans-serif;
@@ -101,10 +101,10 @@
 
     <div class="navbar">
         <a href="adminhome">Home</a>
-        <a href="addfemflareevent">FemFlare Event</a>
+        <a href="addflareevent">Flare Event</a>
         <a href="addspotevent">Spot Events</a>
         <a href="addliteraryevent">Literary Events</a>
-        <a href="addfemflareevent">Ms & Mrs Femflare Event</a>
+        <a href="addflareevent">Ms & Mrs Flare Event</a>
         <a href="stureg">Student Registration</a>
         <a href="viewallstus">View All Students</a>
         <a href="deletestu">Delete Student</a>
@@ -112,9 +112,9 @@
     </div>
 
     <div class="container">
-        <h2>Add FemFlare Event</h2>
+        <h2>Add Flare Event</h2>
          
-        <form method="post" action="insertfemflareevent">
+        <form method="post" action="insertflareevent">
             <div class="form-group">
                 <label class="form-label">Event Name</label>
                 <input type="text" class="form-control" name="name" required>

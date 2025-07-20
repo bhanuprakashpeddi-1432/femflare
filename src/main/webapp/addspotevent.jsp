@@ -104,7 +104,7 @@
         <a href="addtechevent">Tech Events</a>
         <a href="addspotevent">Spot Events</a>
         <a href="addliteraryevent">Literary Events</a>
-        <a href="addfemflareevent">Ms & Mrs Femflare Event</a>
+        <a href="addflareevent">Ms & Mrs Flare Event</a>
         <a href="stureg">Student Registration</a>
         <a href="viewallstus">View All Students</a>
         <a href="deletestu">Delete Student</a>

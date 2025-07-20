@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SFEMFLARE</title>
+    <title>SFLARE</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,7 +43,7 @@
     </style>
 </head>
 <body>
-    <h2>FEMFLARE</h2>
+    <h2>FLARE</h2>
     <div class="navbar">
         <a href="stuhome">Home</a> &nbsp;
         <a href="stuprofile">Profile</a> &nbsp;
@@ -51,7 +51,7 @@
         <a href="techeventlist">Tech Events</a> &nbsp;
         <a href="spoteventlist">Spot Events</a> &nbsp;
         <a href="literaryeventlist">Literary Events</a> &nbsp;
-        <a href="femflareeventlist">Ms & Mrs Femflare Event</a> &nbsp;         
+        <a href="flareeventlist">Ms & Mrs Flare Event</a> &nbsp;         
         <a href="stulogout">Logout</a> &nbsp;
     </div>
 </body>
