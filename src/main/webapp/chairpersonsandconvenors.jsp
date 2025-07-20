@@ -67,7 +67,6 @@
             color: #555;
         }
 
-        /* Responsive Design */
         @media screen and (max-width: 800px) {
             .row {
                 flex-direction: column;

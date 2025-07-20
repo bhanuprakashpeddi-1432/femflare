@@ -36,7 +36,7 @@
             margin-bottom: 15px;
         }
         p {
-    color: #007FFF; /* Electric Blue */
+    color: #007FFF; 
     font-weight: bold;
     margin-bottom: 10px;
     animation: blink 1s infinite alternate;
@@ -46,7 +46,6 @@
     0% { opacity: 1; }
     100% { opacity: 0; }
 }
-
 
         table {
             width: 100%;

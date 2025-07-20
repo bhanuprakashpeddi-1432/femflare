@@ -28,14 +28,12 @@
             margin: auto;
         }
 
-        /* First row - 3 cards */
         .row1 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
 
-        /* Second row - 2 centered cards */
         .row2 {
             display: flex;
             justify-content: center;
@@ -49,7 +47,7 @@
             text-align: center;
             padding: 20px;
             transition: transform 0.3s ease-in-out;
-            width: 250px; /* Fixed width to align properly */
+            width: 250px; 
         }
 
         .card:hover {
@@ -60,7 +58,7 @@
             width: 150px;
             height: 150px;
             object-fit: cover;
-            border: 4px solid #7D7D7D; /* Lighter black */
+            border: 4px solid #7D7D7D; 
         }
 
         .card h3 {
@@ -75,10 +73,9 @@
             color: gray;
         }
 
-        /* Responsive Design */
         @media screen and (max-width: 900px) {
             .row1 {
-                grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+                grid-template-columns: repeat(2, 1fr); 
             }
             .row2 {
                 flex-direction: column;
@@ -88,7 +85,7 @@
 
         @media screen and (max-width: 600px) {
             .row1 {
-                grid-template-columns: 1fr; /* 1 card per row */
+                grid-template-columns: 1fr; 
             }
             .row2 {
                 flex-direction: column;

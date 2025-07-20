@@ -134,7 +134,6 @@
 
     <h3><u>Student Registration</u></h3>
 
-    <!-- Show message if any -->
     <div class="message">
         <%= request.getAttribute("message") != null ? request.getAttribute("message") : "" %>
     </div>

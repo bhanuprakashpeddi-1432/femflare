@@ -81,7 +81,6 @@
             background-color: #c2185b;
         }
 
-        /* Styling for login links */
         .login-links {
             margin-top: 10px;
             font-size: 14px;
@@ -97,7 +96,6 @@
             text-decoration: underline;
         }
 
-        /* Error message styling */
         .alert {
             background-color: #ffcccc;
             color: #d8000c;
@@ -107,17 +105,15 @@
             font-weight: bold;
         }
 
-/* Error message styling */
 .message {
-     /* Light red background */
-    color: #d8000c;             /* Dark red text */
+     
+    color: #d8000c;             
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
-        /* Success message styling */
         .success {
             background-color: #c8e6c9;
             color: #388e3c;
@@ -138,7 +134,6 @@
     <div class="form-container">
         <h3><u>Student Registration</u></h3>
 
-        <!-- Display message if exists -->
         <c:if test="${not empty message}">
             <div class="message">
         <%= request.getAttribute("message") != null ? request.getAttribute("message") : "" %>

@@ -95,8 +95,7 @@ public class AdminController
 			mv.setViewName("adminsessionexpiry");
 			return mv;
 		}
-		
-		
+
 		@GetMapping("adminlogout")
 		public ModelAndView adminlogout(HttpServletRequest request)
 		{
@@ -107,10 +106,7 @@ public class AdminController
 			mv.setViewName("adminlogin");
 			return mv;
 		}
-		
-		
-		//student operations 
-		
+
 		@GetMapping("viewallstus")
 	    public ModelAndView viewallstus()
 	    {
@@ -141,7 +137,6 @@ public class AdminController
 	                                  @RequestParam("scontact") String contact,
 	                                  @RequestParam("spwd") String password) {
 	        
-	        // Create student object
 	        Student stu = new Student();
 	        stu.setStudentIdNo(studentIdNo);
 	        stu.setName(name);
@@ -151,26 +146,20 @@ public class AdminController
 	        stu.setContact(contact);
 	        stu.setPassword(password);
 
-	        // Create ModelAndView object for returning view
 	        ModelAndView mv = new ModelAndView("stureg");
 
 	        try {
-	            // Call service to register student
 	            String resultMessage = adminService.StudentRegistration(stu);
-	            mv.addObject("message", resultMessage); // Success message
+	            mv.addObject("message", resultMessage);
 	        } catch (DataIntegrityViolationException e) {
-	            // Handle duplicate entry error (if the email or ID already exists)
 	            mv.addObject("message", "Error: Duplicate entry. Student ID or Email already exists.");
 	        } catch (Exception e) {
-	            // Handle any other unexpected errors
 	            mv.addObject("message", "An unexpected error occurred. Please try again.");
 	        }
 
 	        return mv;
 	    }
 
-		
-		
 		@GetMapping("deletes")
 		public String deleteopertaions(@RequestParam("id") int sid)
 		{
@@ -187,11 +176,7 @@ public class AdminController
 	      mv.addObject("stulist",stulist);
 	      return mv;
 	    }
-		
-		
-		
-		//tech events
-		
+
 		 @GetMapping("addtechevent")
 		    public ModelAndView addEventForm() {
 		        ModelAndView mv = new ModelAndView();
@@ -229,10 +214,7 @@ public class AdminController
 		        mv.addObject("events", events);
 		        return mv;
 		    }
-		    
-		    
-		    //spot events
-		    
+
 		    @GetMapping("addspotevent")
 		    public ModelAndView addSpotEventForm() {
 		        ModelAndView mv = new ModelAndView();
@@ -271,7 +253,6 @@ public class AdminController
 		        return mv;
 		    }
 
-		    //literary events
 		    @GetMapping("addliteraryevent")
 		    public ModelAndView addLiteraryEventForm() {
 		        return new ModelAndView("addliteraryevent");
@@ -307,7 +288,6 @@ public class AdminController
 		        return mv;
 		    }
 		    
-		//ms&mrs femflare event 
 		    @GetMapping("addfemflareevent")
 		    public ModelAndView addFemFlareEventForm() {
 		        ModelAndView mv = new ModelAndView();
@@ -346,57 +326,44 @@ public class AdminController
 		        return mv;
 		    }
 
-
-		    
-		
-		
-//committee
 @GetMapping("/committee")
 public String Committee() {
     return "committee"; 
 }
-//studentchiefs
+
 @GetMapping("/studentchiefs")
 public String studentchiefs() {
   return "studentchiefs"; 
 }
-//chief patrons
+
 @GetMapping("/chiefpatrons")
 public String chiefpatrons() {
     return "chiefpatrons"; 
 }
-//patronsandadvisors
 
 @GetMapping("/patronsandadvisors")
 public String patronsandadvisors() {
   return "patronsandadvisors"; 
 }
 
-//chiefcoordinators
 @GetMapping("/chiefcoordinators")
 public String chiefcoordinators() {
   return "chiefcoordinators"; 
 }
-
-//chairpersonsandconvenors
 
 @GetMapping("/chairpersonsandconvenors")
 public String chairpersonsandconvenors() {
 return "chairpersonsandconvenors"; 
 }
 
-//about 
 @GetMapping("/about")
 public String about() {
     return "about"; 
 }
 
-//our visionaries
- 
 @GetMapping("/ourvisionaries")
 public String ourvisionaries() {
   return "ourvisionaries"; 
 }
 }
-
 

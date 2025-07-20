@@ -19,7 +19,6 @@ public class LiteraryEvent {
     private String time;
     private String registerLink;
 
-    // Getters and Setters
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
 

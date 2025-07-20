@@ -49,7 +49,6 @@
             gap: 50px;
         }
 
-        /* Responsive Design */
         @media screen and (max-width: 900px) {
             .container {
                 grid-template-columns: repeat(2, 1fr);

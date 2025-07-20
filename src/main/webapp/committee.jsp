@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organizing Committee</title>
     <style>
-        /* Girly Theme - Soft Pink & Elegant */
+        
         body {
             background: linear-gradient(to right, #ffdde1, #ee9ca7);
             font-family: Arial, "Times New Roman", sans-serif;
@@ -14,9 +14,7 @@
             margin: 0;
             padding: 0;
         }
-        
 
-        /* Container */
         .container {
             max-width: 90%;
             margin: 50px auto;
@@ -26,20 +24,17 @@
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
 
-        /* Heading */
         h1 {
             color: #d63384;
             font-size: 2.5em;
             text-shadow: 2px 2px #ffafcc;
         }
 
-/* Align second column (Committee Name) to the left */
 td:nth-child(3) {
     text-align: left;
-    padding-left: 15px; /* Adds spacing for better readability */
+    padding-left: 15px; 
 }
 
-        /* Table */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -50,7 +45,6 @@ td:nth-child(3) {
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        /* Table Head */
         thead {
             background: #ffafcc;
             color: white;
@@ -62,7 +56,6 @@ td:nth-child(3) {
             text-align: center;
         }
 
-        /* Alternating Row Colors */
         tbody tr:nth-child(odd) {
             background: #ffe4e1;
         }
@@ -71,14 +64,12 @@ td:nth-child(3) {
             background: #f8c8dc;
         }
 
-        /* Hover Effect */
         tbody tr:hover {
             background: #ffdde1;
             transform: scale(1.02);
             transition: 0.3s;
         }
 
-        /* Responsive Design */
         @media screen and (max-width: 600px) {
             table {
                 font-size: 0.8em;

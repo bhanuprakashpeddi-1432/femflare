@@ -36,7 +36,6 @@ public class StudentController
             @RequestParam("scontact") String contact,
             @RequestParam("spwd") String password) {
 
-// Create student object
 Student stu = new Student();
 stu.setStudentIdNo(studentIdNo);
 stu.setName(name);
@@ -46,18 +45,14 @@ stu.setEmail(email);
 stu.setContact(contact);
 stu.setPassword(password);
 
-// Create ModelAndView object for returning view
 ModelAndView mv = new ModelAndView("sreg");
 
 try {
-// Call service to register student
 String resultMessage = studentService.StuRegistration(stu);
-mv.addObject("message", resultMessage); // Success message
+mv.addObject("message", resultMessage);
 } catch (DataIntegrityViolationException e) {
-// Handle duplicate entry error (if the email or ID already exists)
 mv.addObject("message", "Error: Duplicate entry. Student ID or Email already exists.");
 } catch (Exception e) {
-// Handle any other unexpected errors
 mv.addObject("message", "An unexpected error occurred. Please try again.");
 }
 

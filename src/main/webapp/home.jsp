@@ -5,45 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FemFlare 2025 Countdown</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+        
+        :root {
+            --primary-white: #ffffff;
+            --primary-cream: #efebe0;
+            --primary-pink: #fb8da0;
+            --primary-hot-pink: #fb6b90;
+            --primary-fuchsia: #fb4570;
+            --text-dark: #2c2c2c;
+            --text-light: #666666;
+        }
+        
         body {
             margin: 0;
-            background: #FFC0CB;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, var(--primary-cream) 0%, var(--primary-pink) 50%, var(--primary-hot-pink) 100%);
+            background-attachment: fixed;
+            font-family: 'Poppins', sans-serif;
             text-align: center;
+            height: 100vh;
+            overflow: hidden;
         }
 
-        /* Navbar */
         nav {
             width: 100%;
-            background: rgba(255, 20, 147, 0.8);
-            padding: 15px;
+            background: linear-gradient(135deg, var(--primary-fuchsia), var(--primary-hot-pink));
+            backdrop-filter: blur(10px);
+            padding: 20px;
             position: fixed;
             top: 0;
             left: 0;
             display: flex;
             justify-content: center;
             font-size: 1.5rem;
-            font-weight: bold;
-            color: white;
+            font-weight: 600;
+            color: var(--primary-white);
             z-index: 10;
+            box-shadow: 0 5px 20px rgba(251, 69, 112, 0.3);
         }
 
-        /* Main Content Wrapper */
         .container {
-            min-height: 150vh; /* Ensures page is scrollable */
-            padding-top: 100px;
+            height: 100vh;
+            padding-top: 80px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
         }
 
-        /* Main title */
         .title {
-            font-size: 7vw;
-            font-weight: bold;
-            background: linear-gradient(45deg, #E0115F, #ff914d, #00C8FF, #DA70D6);
+            font-size: 6vw;
+            font-weight: 800;
+            background: linear-gradient(45deg, var(--primary-fuchsia), var(--primary-hot-pink), var(--primary-pink), var(--primary-white));
             background-size: 300%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-top: 80px;
-            animation: gradientShift 5s ease infinite;
+            background-clip: text;
+            margin-bottom: 40px;
+            margin-top: 20px;
+            animation: gradientShift 4s ease infinite;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         }
 
         @keyframes gradientShift {
@@ -52,41 +74,45 @@
             100% { background-position: 0% 50%; }
         }
 
-        /* COUNTDOWN */
         .countdown {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
+            gap: 40px;
+            flex-wrap: wrap;
+            max-width: 90vw;
         }
 
         .time-box {
-            background: linear-gradient(135deg, #ff8a00, #e52e71);
-            padding: 40px 50px;
-            border-radius: 15px;
+            background: linear-gradient(135deg, var(--primary-white), var(--primary-cream));
+            border: 3px solid var(--primary-fuchsia);
+            padding: 30px 35px;
+            border-radius: 20px;
             text-align: center;
-            color: #fff;
-            font-size: 6vw;
-            font-weight: bold;
+            color: var(--primary-fuchsia);
+            font-size: 4vw;
+            font-weight: 700;
             min-width: 120px;
             position: relative;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
+            box-shadow: 0 10px 30px rgba(251, 69, 112, 0.2);
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
         }
 
         .time-box:hover {
-            transform: scale(1.1);
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(251, 69, 112, 0.3);
+            border-color: var(--primary-hot-pink);
         }
 
         .label {
-            font-size: 1.5vw;
-            color: #fff;
+            font-size: 1rem;
+            color: var(--text-light);
             margin-top: 10px;
-            font-weight: bold;
+            font-weight: 500;
             text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        /* Background Particles */
         canvas {
             display: block;
             position: fixed;
@@ -97,7 +123,6 @@
             z-index: -1;
         }
 
-        /* RESPONSIVE DESIGN */
         @media (max-width: 600px) {
             .countdown {
                 flex-direction: column;
@@ -155,32 +180,89 @@
         canvas.height = window.innerHeight;
 
         const particles = [];
-        const numParticles = 30;
+        const numParticles = 25;
 
         class Particle {
             constructor() {
                 this.x = Math.random() * canvas.width;
                 this.y = Math.random() * canvas.height;
-                this.radius = Math.random() * 4 + 2;
-                this.color = Math.random() > 0.5 ? "#ff3b88" : "#00c8ff";
-                this.speedX = (Math.random() - 0.5) * 2;
-                this.speedY = (Math.random() - 0.5) * 2;
+                this.size = Math.random() * 15 + 10;
+                this.color = this.getRandomPetalColor();
+                this.speedX = (Math.random() - 0.5) * 1.5;
+                this.speedY = Math.random() * 2 + 1;
+                this.rotation = Math.random() * 360;
+                this.rotationSpeed = (Math.random() - 0.5) * 4;
+                this.opacity = Math.random() * 0.7 + 0.3;
+            }
+
+            getRandomPetalColor() {
+                const colors = [
+                    '#fb8da0', // primary-pink
+                    '#fb6b90', // primary-hot-pink
+                    '#fb4570', // primary-fuchsia
+                    '#ffb3c1', // light pink
+                    '#ff91a4'  // medium pink
+                ];
+                return colors[Math.floor(Math.random() * colors.length)];
             }
 
             move() {
                 this.x += this.speedX;
                 this.y += this.speedY;
-                if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
-                if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+                this.rotation += this.rotationSpeed;
+                
+                // Reset particle when it goes off screen
+                if (this.y > canvas.height + this.size) {
+                    this.y = -this.size;
+                    this.x = Math.random() * canvas.width;
+                }
+                if (this.x < -this.size || this.x > canvas.width + this.size) {
+                    this.x = Math.random() * canvas.width;
+                    this.y = -this.size;
+                }
+            }
+
+            drawPetal() {
+                ctx.save();
+                ctx.translate(this.x, this.y);
+                ctx.rotate(this.rotation * Math.PI / 180);
+                ctx.globalAlpha = this.opacity;
+                
+                // Create rose petal shape
+                ctx.fillStyle = this.color;
+                ctx.beginPath();
+                
+                // Petal shape using bezier curves
+                const size = this.size;
+                ctx.moveTo(0, -size/2);
+                ctx.bezierCurveTo(-size/3, -size/2, -size/2, -size/4, -size/3, 0);
+                ctx.bezierCurveTo(-size/2, size/4, -size/4, size/2, 0, size/3);
+                ctx.bezierCurveTo(size/4, size/2, size/2, size/4, size/3, 0);
+                ctx.bezierCurveTo(size/2, -size/4, size/3, -size/2, 0, -size/2);
+                ctx.closePath();
+                ctx.fill();
+                
+                // Add gradient effect
+                const gradient = ctx.createRadialGradient(0, 0, 0, 0, 0, size/2);
+                gradient.addColorStop(0, this.color + '80');
+                gradient.addColorStop(1, this.color + '20');
+                ctx.fillStyle = gradient;
+                ctx.fill();
+                
+                // Add petal details
+                ctx.strokeStyle = this.color;
+                ctx.lineWidth = 1;
+                ctx.globalAlpha = this.opacity * 0.5;
+                ctx.beginPath();
+                ctx.moveTo(0, -size/3);
+                ctx.quadraticCurveTo(0, 0, 0, size/4);
+                ctx.stroke();
+                
+                ctx.restore();
             }
 
             draw() {
-                ctx.shadowBlur = 10;
-                ctx.shadowColor = this.color;
-                ctx.fillStyle = this.color;
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-                ctx.fill();
+                this.drawPetal();
             }
         }
 
@@ -209,7 +291,7 @@
 
         // Countdown Timer Logic
         function updateCountdown() {
-            const eventDate = new Date("April 12, 2025 00:00:00").getTime();
+            const eventDate = new Date("December 12, 2025 00:00:00").getTime();
             const now = new Date().getTime();
             const timeLeft = eventDate - now;
 

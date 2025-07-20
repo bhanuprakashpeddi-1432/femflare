@@ -9,5 +9,4 @@ public interface StudentService
 	public Student displayStudentbyID(int sid);
 	public String StuRegistration(Student stu);
 
-
 }

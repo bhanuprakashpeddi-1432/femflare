@@ -25,8 +25,6 @@ public class AdminServiceImpl implements AdminService
 		return adminRepository.checkadminlogin(uname, pwd);
 	}
 
-	
-
 	@Override
 	public String StudentRegistration(Student stu) 
 	{
@@ -41,7 +39,6 @@ public class AdminServiceImpl implements AdminService
 		return studentRepository.findAll();
 	}
 
-	
 	@Override
 	public String deletestu(int sid) 
 	{

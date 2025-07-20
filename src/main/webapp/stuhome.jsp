@@ -17,7 +17,7 @@
     <style>
         body {
             font-family: "Poppins", sans-serif;
-            background: linear-gradient(to right, #f8bbd0, #e1bee7); /* Light pink to lavender */
+            background: linear-gradient(to right, #f8bbd0, #e1bee7); 
             margin: 0;
             padding: 0;
             text-align: center;
@@ -28,7 +28,7 @@
             max-width: 800px;
             margin: 40px auto;
             padding: 25px;
-            background: #ffffff; /* White box */
+            background: #ffffff; 
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(8px);
@@ -65,7 +65,6 @@
             color: #ff4081;
         }
 
-        /* Responsive Design */
         @media screen and (max-width: 768px) {
             .container {
                 width: 90%;

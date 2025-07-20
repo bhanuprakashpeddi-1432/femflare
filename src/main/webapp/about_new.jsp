@@ -1,8 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <!DOCTYPE html>
-<html lang="        }
-
-        .content-sections {
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,6 +35,7 @@
             position: relative;
         }
 
+        /* Animated background particles */
         body::before {
             content: '';
             position: fixed;
@@ -70,8 +69,10 @@
         .hero-title {
             font-size: 4rem;
             font-weight: 800;
-            color: var(--primary-fuchsia);
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, var(--primary-fuchsia), var(--primary-hot-pink), var(--primary-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -82,9 +83,9 @@
         .hero-subtitle {
             font-size: 1.5rem;
             color: var(--text-dark);
-            font-weight: 600;
-            text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+            font-weight: 500;
             margin-bottom: 30px;
+            opacity: 0.9;
             animation: fadeInUp 1s ease-out 0.2s both;
         }
 
@@ -164,7 +165,6 @@
             font-size: 2.5rem;
             font-weight: 700;
             color: var(--primary-fuchsia);
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
             margin-bottom: 20px;
             position: relative;
         }
@@ -184,8 +184,6 @@
             font-size: 1.1rem;
             line-height: 1.8;
             color: var(--text-dark);
-            font-weight: 500;
-            text-shadow: 0 1px 1px rgba(255,255,255,0.5);
             margin-bottom: 20px;
             text-align: justify;
         }
@@ -193,16 +191,14 @@
         .section-image {
             width: 100%;
             height: 250px;
-            object-fit: contain;
+            object-fit: cover;
             border-radius: 20px;
             box-shadow: 0 15px 30px rgba(0,0,0,0.1);
             transition: all 0.3s ease;
-            background: var(--primary-white);
-            padding: 15px;
         }
 
         .section-image:hover {
-            transform: scale(1.03) rotate(1deg);
+            transform: scale(1.05) rotate(2deg);
             box-shadow: 0 20px 40px rgba(251, 69, 112, 0.2);
         }
 
@@ -352,11 +348,13 @@
     <%@include file="mainnavbar.jsp" %>
     
     <div class="about-container">
+        <!-- Hero Section -->
         <div class="hero-section">
             <h1 class="hero-title">About FemFlare</h1>
             <p class="hero-subtitle">Empowering Women • Celebrating Excellence • Creating Tomorrow</p>
         </div>
 
+        <!-- Stats Section -->
         <div class="floating-stats animate-on-scroll">
             <div class="stat-card">
                 <span class="stat-number">2025</span>
@@ -376,6 +374,7 @@
             </div>
         </div>
 
+        <!-- FemFlare Section -->
         <div class="content-section animate-on-scroll">
             <div class="content-card">
                 <div class="card-content">
@@ -462,6 +461,7 @@
     </div>
 
     <script>
+        // Smooth scroll animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -475,10 +475,12 @@
             });
         }, observerOptions);
 
+        // Observe all elements with animate-on-scroll class
         document.querySelectorAll('.animate-on-scroll').forEach(el => {
             observer.observe(el);
         });
 
+        // Add some interactive sparkle effects
         document.addEventListener('mousemove', (e) => {
             if (Math.random() > 0.98) {
                 createSparkle(e.clientX, e.clientY);
@@ -505,6 +507,7 @@
             setTimeout(() => sparkle.remove(), 1000);
         }
 
+        // Add CSS for sparkle animation
         const sparkleCSS = document.createElement('style');
         sparkleCSS.textContent = `
             @keyframes sparkleAnim {

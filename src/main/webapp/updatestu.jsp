@@ -12,7 +12,7 @@ if (stu == null) {
 <head>
     <title>Update Student</title>
     <style>
-        /* Soft Unicorn Gradient Background */
+        
         body {
             font-family: "Poppins", sans-serif;
             background: linear-gradient(135deg, #ffdde1, #ffecf2, #e0c3fc, #d8f3dc, #c1e1ff);
@@ -42,7 +42,6 @@ if (stu == null) {
             color: red;
         }
 
-        /* Form Container */
         .form-container {
             background: white;
             width: 380px;
@@ -50,7 +49,7 @@ if (stu == null) {
             border-radius: 15px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
             text-align: center;
-            border: 2px solid #ffd1dc; /* Soft Blush Pink */
+            border: 2px solid #ffd1dc; 
             color: #666;
             font-size: 16px;
             font-weight: 500;
@@ -69,7 +68,7 @@ if (stu == null) {
 
         label {
             font-weight: bold;
-            color: #b19cd9; /* Pastel Lavender */
+            color: #b19cd9; 
         }
 
         input[type="text"], input[type="number"], input[type="email"], input[type="password"] {
@@ -91,7 +90,7 @@ if (stu == null) {
         }
 
         input[type="submit"], input[type="reset"] {
-            background: #ffb6c1; /* Light Pink */
+            background: #ffb6c1; 
             color: white;
             border: none;
             padding: 10px 15px;
@@ -102,7 +101,7 @@ if (stu == null) {
         }
 
         input[type="submit"]:hover, input[type="reset"]:hover {
-            background: #f8a1c1; /* Slightly darker pink */
+            background: #f8a1c1; 
         }
     </style>
 </head>

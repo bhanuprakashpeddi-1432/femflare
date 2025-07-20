@@ -75,8 +75,7 @@
             <img src="images/18.jpeg" alt="Event 18">
             <img src="images/19.JPG" alt="Event 18">
             <img src="images/20.JPG" alt="Event 18">
-         
-            
+
         </div>
     </div>
 

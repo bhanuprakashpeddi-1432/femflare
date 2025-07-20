@@ -13,7 +13,7 @@ if (stu == null) {
 <meta charset="UTF-8">
 <title>Student Home</title>
 <style>
-    /* Soft Unicorn Gradient Background */
+    
     body {
         font-family: "Poppins", sans-serif;
         background: linear-gradient(135deg, #ffdde1, #ffecf2, #e0c3fc, #d8f3dc, #c1e1ff);
@@ -33,10 +33,9 @@ if (stu == null) {
         100% { background-position: 0% 50%; }
     }
 
-    /* Navbar Styling */
     .navbar {
         width: 100%;
-        background: rgba(255, 223, 230, 0.7); /* Soft Baby Pink */
+        background: rgba(255, 223, 230, 0.7); 
         padding: 12px 0;
         text-align: center;
         position: fixed;
@@ -56,7 +55,7 @@ if (stu == null) {
     }
 
     .navbar a:hover {
-        background: rgba(255, 245, 250, 0.8); /* Soft Powder Pink */
+        background: rgba(255, 245, 250, 0.8); 
         border-radius: 5px;
     }
 
@@ -67,7 +66,6 @@ if (stu == null) {
         text-align: center;
     }
 
-    /* White Profile Card */
     .card {
         background: white;
         width: 350px;
@@ -76,14 +74,14 @@ if (stu == null) {
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
         text-align: center;
         margin-top: 20px;
-        border: 2px solid #ffd1dc; /* Soft Blush Pink */
+        border: 2px solid #ffd1dc; 
         color: #666;
         font-size: 16px;
         font-weight: 500;
     }
 
     .card b {
-        color: #b19cd9; /* Pastel Lavender */
+        color: #b19cd9; 
     }
 </style>
 </head>

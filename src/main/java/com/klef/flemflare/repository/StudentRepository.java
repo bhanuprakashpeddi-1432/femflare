@@ -12,9 +12,7 @@ public interface StudentRepository extends JpaRepository<Student, Integer> {
     @Query("SELECT s FROM Student s WHERE s.email = ?1 AND s.password = ?2")
     Student checkstulogin(String stuemail, String stupwd);
 
-    // Check if a student exists by email
     boolean existsByEmail(String email);
 
-    // Check if a student exists by student ID
     boolean existsByStudentIdNo(String studentIdNo);
 }

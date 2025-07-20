@@ -30,7 +30,6 @@ public class TechEvent {
         this.registerLink = registerLink;
     }
 
-    // Getters and Setters
     public int getId()
     {
     	return id;

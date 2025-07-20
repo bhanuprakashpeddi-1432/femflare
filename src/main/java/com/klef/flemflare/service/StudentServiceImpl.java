@@ -14,11 +14,9 @@ public class StudentServiceImpl implements StudentService {
     @Override
     public String StuRegistration(Student stu) {
         try {
-            // Save student
             studentRepository.save(stu);
             return "Student Registered Successfully";
         } catch (DataIntegrityViolationException e) {
-            // Handle duplicate entry exception
             return "Duplicate entry: Student ID or Email already exists.";
         }
     }

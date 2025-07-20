@@ -22,7 +22,7 @@
 
         .container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+            grid-template-columns: repeat(3, 1fr); 
             gap: 20px;
             justify-content: center;
             padding: 20px;
@@ -47,7 +47,7 @@
             width: 150px;
             height: 150px;
             object-fit: cover;
-            border: 4px solid #7D7D7D; /* Changed to a lighter black (grayish black) */
+            border: 4px solid #7D7D7D; 
         }
 
         .card h3 {
@@ -62,16 +62,15 @@
             color: gray;
         }
 
-        /* Responsive Design */
         @media screen and (max-width: 900px) {
             .container {
-                grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+                grid-template-columns: repeat(2, 1fr); 
             }
         }
 
         @media screen and (max-width: 600px) {
             .container {
-                grid-template-columns: 1fr; /* 1 card per row on mobile */
+                grid-template-columns: 1fr; 
             }
         }
     </style>

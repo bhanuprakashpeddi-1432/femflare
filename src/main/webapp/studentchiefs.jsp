@@ -66,7 +66,6 @@
             color: #555;
         }
 
-        /* Responsive Design */
         @media screen and (max-width: 768px) {
             .container {
                 flex-direction: column;
@@ -140,8 +139,7 @@
             <h3>Jyotsana </h3>
             <p>Chief Treasurer</p>
         </div>
-        
-        
+
         <div class="card">
             <img src="images/Charishma.jpeg" alt="Mulpuru Charishma">
             <h3>Mulpuru Charishma</h3>
@@ -225,8 +223,7 @@
             <h3>Nerella Dhairyakarshini </h3>
             <p>Chief - Creative Arts</p>
         </div>
-        
-        
+
         <div class="card">
             <img src="images/chandrika.jpg" alt="chandrika">
             <h3>Chandrika.Tiriveedhi </h3>
