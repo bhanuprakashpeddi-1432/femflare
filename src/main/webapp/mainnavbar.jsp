@@ -164,7 +164,7 @@
             border: 1px solid rgba(251, 69, 112, 0.2);
             overflow: hidden;
             opacity: 0;
-            transition: all 0.3s ease;
+            transition: all 1s ease;
         }
 
         .dropdown-content a {
@@ -174,7 +174,7 @@
             text-align: left;
             font-weight: 500 !important;
             font-size: 0.9rem !important;
-            transition: all 0.3s ease;
+            transition: all 1s ease;
             border-bottom: 1px solid rgba(251, 141, 160, 0.1);
             text-shadow: none !important;
         }
@@ -193,7 +193,7 @@
         .dropdown:hover .dropdown-content {
             display: block;
             opacity: 1;
-            animation: dropdownSlide 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            animation: dropdownSlide 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         @keyframes dropdownSlide {

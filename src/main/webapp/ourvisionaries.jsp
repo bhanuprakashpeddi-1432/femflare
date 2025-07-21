@@ -467,75 +467,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Honorable Secretary Section -->
-
-        <div class="section">
-            <h3>About the Secretary</h3>
-            <p>Smt. Koneru Siva Kanchana Latha is an Indian educationalist, social entrepreneur, and philanthropist dedicated to women's empowerment. Born in 1961 in Vijayawada, Andhra Pradesh, she was raised in a family that valued education and social responsibility. She holds a Bachelor's degree in Home Science from St. Theresa Women’s College and has held leadership roles in various educational institutions. She is married to Er. Koneru Satyanarayana, President of KLEF, a prominent educational institution, and a noted movie producer and philanthropist. Together, they have founded several non-profit organizations focused on women's education and vocational training. The couple has three children—Koneru Lakshmana Havish (Purdue University), Koneru Raja Harin (Northwestern University), and Koneru Nikhila Karthikeyan (Leeds University). Their contributions to education and philanthropy have earned them numerous awards, including the Rashtra Vibhushan, Rajiv Gandhi Shiromani, and Mahila Shiromani Awards. Their work continues to inspire many in the fields of education and social welfare. In conclusion, Kanchana Latha and Satyanarayana are a power couple in the field of education and philanthropy in Andhra Pradesh, India. Their shared vision and dedication to empowering women and promoting education have made a significant impact on society, and their children have followed in their footsteps, pursuing higher education and making a name for themselves in their respective fields. They serve as an inspiration to many, and their work is a testament to the positive impact that can be made through a shared commitment to social welfare.</p>
-        </div>
-        <div class="section">
-        <h3>Contributions At KLEF</h3>
-        <p>Kanchana Latha's role as the Secretary of Koneru Lakshmaiah Education Foundation (KLEF) is a prominent member of the foundation's leadership team. KLEF is a pioneering educational institution with campuses in Andhra Pradesh and Telangana, offering a range of courses in sciences, engineering, technology, architecture, pharmacy, agriculture, arts, commerce, management, hotel management, law, and other fields.
-
-KLEF was established as the Koneru Lakshmaiah College of Engineering in 1980, and since then, it has grown to become a deemed-to-be university and a recognized Category 1 institution by the Ministry of Education in India. As the Secretary of KLEF, Kanchana Latha has played a significant role in the institution's growth and development, ensuring that it continues to provide quality education to students from all walks of life.
-
-Kanchana Latha's work in the field of education and social welfare has earned her several accolades, including the Mahila Shiromani Award and the Women Achiever's Award, among others. Her dedication to promoting education and empowering women has inspired many, and she continues to be a beacon of hope for those seeking to make a positive impact on society.
-
-Kanchana Latha's contributions as the Secretary of KLEF. Her efforts in promoting education and social welfare have had a significant impact on society, and her work serves as an inspiration to others who seek to make a positive difference in the world. Through her leadership and dedication, KLEF has become a premier educational institution in India, offering a wide range of courses in various fields and providing quality education to students from diverse backgrounds.</p>
-        </div>
-        
-        <div class="section">
-        <h3>Leadership Responsibilities</h3>
-        <p>As the Secretary of KLEF, this individual plays a critical role in managing the operations of the foundation. She oversee a range of administrative functions, and guide the teams to develop and implement strategies for the long-term growth and success of the institution. Under Kanchana Latha's leadership, KLEF has also expanded its focus on social responsibility and community development, through various initiatives such as providing education and vocational training to underprivileged women, supporting rural development projects, and promoting environmental sustainability.</p>
-        </div>
-        
-        <div class="section">
-        <h3>Foreign Visits</h3>
-        <p>Smt. Kanchana Latha is a well-traveled individual with a deep interest in global cultures, education, and environmental conservation. Having visited over 50 countries, she has gained valuable insights into diverse educational systems and women's empowerment.
-
-She has actively participated in national and international conferences on crafts, culture, urban gardening, and women’s health. Her dedication to gender equality and social welfare has earned her numerous accolades, making her a respected figure in education, social entrepreneurship, and philanthropy.</p>
-        </div>
-        
-        <div class="section">
-        <h3>Social Memberships</h3>
-        <p>Smt. Kanchana Latha is actively involved in social welfare and women’s empowerment through various organizations. She is a member of ALEAP, multiple NGOs in Andhra Pradesh, and Women Empowerment Clubs. She also serves as the Honourable Vice President of the Rose Society and is associated with the Crafts Council of Andhra Pradesh, promoting traditional handicrafts and artisans' livelihoods.
-
-As an AP Craft Council member, she is dedicated to preserving Andhra Pradesh’s cultural heritage, fostering strong relationships, and broadening craft appreciation. Her passion for social welfare and empowerment continues to inspire and create a lasting impact.</p>
-        </div>
-        
-        <div class="section">
-        <h3>Key contributor of women technology park</h3>
-        <p>Smt. Kanchana Latha Koneru played a key role in establishing the Women Technology Park (2016–2021) at Vaddeswaram, supported by the Ministry of Science and Technology, Government of India. Her design interventions in Kondapalli and Etikkopaka toys significantly boosted production, benefiting local artisans.  
-
-She personally supported training programs for women in rope making, food processing, bio-feed and bio-fertilizer development, cotton weaving, and handloom saree printing. The center is now self-sustained, enhancing women's livelihoods. Her commitment to skill development and women’s empowerment continues to make a lasting impact in Guntur, Andhra Pradesh.</p>
-        </div>
-        
-        <div class="section">
-        <h3>Smart village Revolution-Remarkable outcomes</h3>
-        <p>Mrs. Kanchana Latha Koneru's contributions to the development of rural communities in Andhra Pradesh are truly remarkable. Her efforts to initiate the Smart Village Revolution as part of the Corporate Social Responsibility (CSR) program of KLEF have led to the transformation of about 90 villages into smart villages.
-
-Under her leadership, these villages have been able to overcome poverty and underdevelopment by adopting innovative solutions in the areas of healthcare, education, sanitation, and technology. In addition to providing hygienic drinking water to these villages, Mrs. Koneru has also facilitated the provision of computer systems and training to Village Panchayat officers, enabling them to speed up their work and deliver better services to the community.
-
-Mrs. Koneru's vision and leadership have been instrumental in driving the Smart Village Revolution program and transforming these villages into models of development. Her commitment to rural communities and her efforts to empower them with the tools and resources they need to thrive are truly inspiring.
-
-Overall, Mrs. Kanchana Latha Koneru's contributions to the development of rural communities through the Smart Village Revolution program are making a significant impact on the lives of many people. Her dedication to improving access to healthcare, education, and technology is empowering communities and providing them with a pathway to a better future. She is a true champion of social responsibility and a role model for those looking to make a positive impact in the world.
-
-Mrs. Koneru's extensive experience across various industries has equipped her with the knowledge and skills to drive positive change and development in the villages adopted by her. She continues to explore new technologies and approaches to create sustainable solutions and promote social and economic progress in these communities.</p>
-        </div>
-        
-        <div class="section">
-        <h3>Awards and Honours</h3>
-        <p>Mrs. Kanchana Latha Koneru has received numerous national and international awards for her contributions to design, education, and environmental initiatives. Notable accolades include the **Bharat Jyothi Award (1999)**, **Uttama Mahila Award (2021)**, and recognition from **APUGBC** for green initiatives. She was honored by **KL Alumni Groups** and trekked **Nathu La (14,150 ft)** on the Old Silk Route.  
-
-As **Secretary & Spokesperson of KLEF**, she received awards from **MHRD** for Swachhata Rankings (2017–2019) and from **AICTE** for Clean & Green Campus. Her dedication to women's empowerment, education, and sustainability continues to inspire many.</p>
-        </div>
-        
-        <div class="section">
-        <h3>CHARITY - VILLAGE ADOPTION AND SOCIAL SERVICE</h3>
-        <p>She adopted 8 villages and was instrumental in converting them as smart villages. She supported installation of drip irrigation projects to conserve the water, installation of solar pump sets, and providing solar invertors to avoid unprecedented power cuts, establishing common computer training centres for village students’ education, aid towards of hygienic drinking water and not limited too. She is feeding daily 200 old aged and needy people at her house for last 7 years.</p>
-        </div>
+        </div>  <!-- Honorable Secretary Section -->
         
         <!-- Secretary Section -->
         <div class="profile-section animate-on-scroll">

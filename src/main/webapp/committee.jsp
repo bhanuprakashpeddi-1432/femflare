@@ -4,92 +4,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Organizing Committee</title>
+    <title>Organizing Committee - FemFlare 2025</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
         
-        body {
-            background: linear-gradient(to right, #ffdde1, #ee9ca7);
-            font-family: Arial, "Times New Roman", sans-serif;
-            text-align: center;
+        :root {
+            --primary-white: #ffffff;
+            --primary-cream: #efebe0;
+            --primary-pink: #fb8da0;
+            --primary-hot-pink: #fb6b90;
+            --primary-fuchsia: #fb4570;
+            --text-dark: #2c2c2c;
+            --text-light: #666666;
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(251, 69, 112, 0.2);
+        }
+
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
 
-        .container {
-            max-width: 90%;
-            margin: 50px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--primary-cream) 0%, var(--primary-pink) 50%, var(--primary-hot-pink) 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
         }
 
-        h1 {
-            color: #d63384;
-            font-size: 2.5em;
-            text-shadow: 2px 2px #ffafcc;
+        /* Animated background particles */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23fb8da0" fill-opacity="0.03"><circle cx="30" cy="30" r="2"/></g></svg>');
+            animation: float 20s ease-in-out infinite;
+            z-index: -1;
         }
 
-td:nth-child(3) {
-    text-align: left;
-    padding-left: 15px; 
-}
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .committee-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 80px 20px 60px;
+            position: relative;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .hero-title {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--primary-fuchsia);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            font-weight: 600;
+            text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .table-container {
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(251, 69, 112, 0.1);
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
-            background: white;
-            border-radius: 10px;
+            background: transparent;
+            border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         thead {
-            background: #ffafcc;
-            color: white;
+            background: linear-gradient(135deg, var(--primary-fuchsia), var(--primary-hot-pink));
+            color: var(--primary-white);
         }
 
-        th, td {
-            padding: 10px;
-            border: 1px solid #ffb6c1;
-            text-align: center;
+        th {
+            padding: 20px 15px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
         }
 
-        tbody tr:nth-child(odd) {
-            background: #ffe4e1;
+        td {
+            padding: 18px 15px;
+            border: none;
+            border-bottom: 1px solid rgba(251, 69, 112, 0.1);
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        td:nth-child(3) {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        tbody tr {
+            background: rgba(255, 255, 255, 0.7);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         tbody tr:nth-child(even) {
-            background: #f8c8dc;
+            background: rgba(251, 141, 160, 0.1);
         }
 
         tbody tr:hover {
-            background: #ffdde1;
-            transform: scale(1.02);
-            transition: 0.3s;
+            background: rgba(251, 69, 112, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(251, 69, 112, 0.2);
         }
 
-        @media screen and (max-width: 600px) {
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .committee-container {
+                padding: 70px 15px 40px;
+            }
+            
+            .table-container {
+                padding: 20px;
+                overflow-x: auto;
+            }
+            
             table {
-                font-size: 0.8em;
+                font-size: 0.9rem;
+                min-width: 600px;
+            }
+            
+            th, td {
+                padding: 12px 10px;
             }
         }
     </style>
 </head>
 <body>
-<%@include file="mainnavbar.jsp" %>
-    <div class="container">
-        <h1>CO-CONVENERS & ORGANISING COMMITTEE</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>S. No.</th>
-                    <th>Name of the Committee</th>
-                    <th>Faculty In-charge(s)</th>
-                </tr>
-            </thead>
-            <tbody>
+    <%@include file="mainnavbar.jsp" %>
+    
+    <div class="committee-container">
+        <div class="hero-section">
+            <h1 class="hero-title">Organizing Committee</h1>
+            <p class="hero-subtitle">Co-Conveners & Committee Members - FemFlare 2025</p>
+        </div>
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S. No.</th>
+                        <th>Committee</th>
+                        <th>Faculty In-charge(s)</th>
+                    </tr>
+                </thead>
+                <tbody>
                 <%
                     String[][] committeeData = {
                     	{"1", "Co-Convener", "Dr. P .Sailaja,Associate Professor,Department of LAW, KLEF"},     		
@@ -126,6 +242,7 @@ td:nth-child(3) {
                 <% } %>
             </tbody>
         </table>
+        </div>
     </div>
 </body>
 </html>
