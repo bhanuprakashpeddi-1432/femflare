@@ -1,0 +1,34 @@
+services:
+  # Web Service - Spring Boot Application
+  - type: web
+    name: femflare-app
+    runtime: docker
+    plan: free
+    branch: main
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: DATABASE_URL
+        fromDatabase:
+          name: femflare-db
+          property: connectionString
+      - key: DB_USERNAME
+        fromDatabase:
+          name: femflare-db
+          property: user
+      - key: DB_PASSWORD
+        fromDatabase:
+          name: femflare-db
+          property: password
+      - key: JAVA_OPTS
+        value: "-Xmx512m -Xms256m"
+    healthCheckPath: /health
+    autoDeploy: true
+
+  # Database Service - MySQL
+databases:
+  - name: femflare-db
+    databaseName: flare
+    plan: free
+    user: femflare_user
